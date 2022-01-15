@@ -1,0 +1,46 @@
+.header {
+    position: relative;
+    padding-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        padding: 12px 26px;
+        display: block;
+        background: url(../images/promo/cloud.webp) center center/cover no-repeat;
+        width: 329px;
+        height: 113px;
+    }
+    &__menu {
+        position: relative;
+        margin: 0;
+        padding: 46px 17px 46px 116px;
+        display: flex;
+        justify-content: space-between;
+        width: 446px;
+        height: 102px;
+        list-style: none;
+        &:after {
+            position: absolute;
+            content: '';
+            background: url(../images/promo/cloud.webp) 100% 3px/100% 100% no-repeat;
+            width: inherit;
+            height: inherit;
+            top: 0px;
+            left: 37px;
+            z-index: 0;
+        }
+    }
+    &__item {
+        z-index: 2;
+        &-link {
+            display: block;
+            color: #715D00;
+            font-weight: 700;
+            text-decoration: none;
+            line-height: 18px;
+            font-size: 20px;
+            border-bottom: 1px #715D00 solid;
+        }
+    }
+
+}
