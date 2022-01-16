@@ -18,13 +18,13 @@
 
                 <ul class="header__menu">
                     <li class="header__item">
-                        <a href="#" class="header__item-link">ORDER</a>
+                        <a href="#order" class="header__item-link">ORDER</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__item-link">ABOUT</a>
+                        <a href="#about" class="header__item-link">ABOUT</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__item-link">RESULTS</a>
+                        <a href="#results" class="header__item-link">RESULTS</a>
                     </li>
                 </ul>
             </header>
@@ -50,7 +50,7 @@
                     <img src="images/promo/feed.webp" alt="feed" class="promo__feed">
                 </div>
 
-                <div class="promo__item">
+                <div id="order" class="promo__item">
                     <div class="promo__timer">
                         <div class="descr">TIME LEFT</div>
                         <div class="timer">
@@ -64,7 +64,7 @@
 
                     <form action="#" class="promo__form">
                         <input name="name" type="text" placeholder="Name" required>
-                        <input name="phone" required>
+                        <input name="phone" required placeholder="Ваш телефон">
                         <button class="promo__btn">ORDER</button>
                     </form>
 
@@ -74,7 +74,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="about__title title">From the manufacturer</h2>
             <div class="about__wrapper">
@@ -113,7 +113,7 @@
         </div>
     </section>
 
-    <section class="results">
+    <section id="results" class="results">
         <div class="container">
             <h2 class="results__title title">Best Uses for Calming Chews</h2>
             <div class="results__wrapper">
@@ -135,7 +135,7 @@
     </section>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-    <script scr="js/jquery.maskedinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
