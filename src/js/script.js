@@ -1,5 +1,7 @@
+'use strict';
+
 (function($) {
-    $('input[name=phone]').mask("8(999) 999-9999");
+	$('input[name=phone]').mask("+38(099)999-99-99");
 })(jQuery);
 
 
