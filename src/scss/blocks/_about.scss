@@ -4,10 +4,6 @@
     background: url(../images/about/bg_about.webp) 100% center/400% 40% repeat;
 
     &__title {
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 43px;
-        text-align: center;
         background: linear-gradient(180deg, #F9E994 0%, #537D13 56.25%, #483C08 100%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -19,8 +15,9 @@
     }
     &__item {
         margin-top: 49px;
+        padding: 0px 15px 15px;
         width: 305px;
-        height: 439px; 
+        min-height: 439px; 
         background: #F6E791;
         box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
@@ -36,7 +33,7 @@
         margin: 0 auto;
         padding: 21px 16px 0;
         width: 275px;
-        height: 218px;
+        min-height: 218px;
         background: rgba(161, 211, 55, 0.4);
         border-radius: 20px;
     }

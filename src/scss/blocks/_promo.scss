@@ -4,10 +4,6 @@
     padding: 23px 0 100px;
     z-index: -2;
     &__title {
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 43px;
-        text-align: center;
         color: #F9E994;
         max-width: 578px;
         margin: 0 auto;
@@ -17,17 +13,41 @@
         margin-top: 5px;
         display: grid;
         grid-template-rows: minmax(428px, auto) 417px 462px;
-        place-content: space-between;
+        grid-template-columns: auto;
+        place-content: center center;
+    }
+    &__item {
+        margin: 0 auto;
+        &:nth-child(2) {
+            position: relative;
+            &:before {
+                @include cat;
+            }
+            &:after {
+                @include cat;
+                top: -120px;
+                left: -22px;
+                transform: rotateZ(242deg) scale(-1, 1);
+            }
+        }
+        &:nth-child(3) {
+            width: 270px;
+            background-color: #FDFCFC;
+            border-radius: 20px 20px 10px 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
     }
     &__descr {
+        padding: 0 10px;
         margin-top: 33px;
         font-weight: 400;
         font-size: 26px;
-        line-height: 34px;
+        line-height: 30px;
         color: #F6F7E4;
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     }
     &__menu {
+        margin: 0 auto;
         margin-top: 61px;
         padding: 15px 26px 0px 70px;
         max-width: 323px;
@@ -40,7 +60,7 @@
         position: relative;
         margin-top: 19.5px;
         font-weight: 700;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 26px;
         color: #DFE4DE;
         &:before {
@@ -48,7 +68,6 @@
         }
     }
     &__feed {
-        margin: 0 auto;
         padding-top: 52px;
         display: block;
         position: absolute;
@@ -57,28 +76,6 @@
         z-index: 2;
         width: 300px;
     }
-    &__item {
-        &:nth-child(2) {
-            position: relative;
-            &:before {
-                @include cat;
-            }
-            &:after {
-                @include cat;
-                top: -120px;
-                left: 140px;
-                transform: rotateZ(242deg) scale(-1, 1);
-            }
-        }
-        &:nth-child(3) {
-            margin: 0 auto;
-            width: 270px;
-            background-color: #FDFCFC;
-            border-radius: 20px 20px 10px 10px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-    }
-
     &__timer {
         width: 270px;
         height: 196px;
@@ -86,7 +83,7 @@
         border-radius: 7px 7px 0px;
         text-align: center;
         padding-top: 23px;
-        .title {
+        .descr {
             font-weight: 700;
             font-size: 33px;
             line-height: 39px;
