@@ -1,6 +1,11 @@
 @media (min-width: 576px) {
     .container {
         width: 540px;
+        padding: 0;
+    }
+    .title {
+        font-size: 45px;
+        line-height: 43px;
     }
 
     .header {
@@ -24,6 +29,24 @@
                 left: 0px;
                 width: 446px;
                 height: 102px;
+            }
+        }
+    }
+    .promo {
+        &__title {
+            margin-top: 50px;
+        }
+        &__descr {
+           font-weight: 700;
+        }
+        &__item {
+            &:nth-child(2) {
+                &:before {
+                    left: -230px;
+                }
+                &:after {
+                    left: 55px;
+                }
             }
         }
     }
