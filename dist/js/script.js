@@ -56,4 +56,17 @@ function setClock(endtime) {
 setClock(deadLine);
 
 
+// Set order date
+const orderDate = new Date('2021-11-17'),
+      dataPlace = document.querySelector('.promo__date');
+
+function setOrderDate(date) {
+    dataPlace.innerHTML = 
+    `Order date: ${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`;
+}
+
+setOrderDate(orderDate);
+
+
+
 
