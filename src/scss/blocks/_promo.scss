@@ -14,7 +14,6 @@
         display: grid;
         grid-template-rows: minmax(428px, auto) 417px 462px;
         grid-template-columns: auto;
-        place-content: center center;
     }
     &__item {
         margin: 0 auto;

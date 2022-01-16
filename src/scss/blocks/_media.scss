@@ -91,5 +91,42 @@
             bottom: 0px;
         }
     }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .header {
+        &__menu {
+            margin-top: 0;
+        }
+    }
+    .promo {
+        background: url(../images/promo/bg_promo.webp) center center/cover no-repeat;
+        &__wrapper {
+            margin-top: 15px;
+            grid-template-columns: 354px 300px 270px;
+            grid-template-rows: 1fr;
+            align-items: end;
+            justify-content: space-between;
+            row-gap: unset;
+        }
+        &__item {
+            &:nth-child(2) {
+                height: 100%;
+                &:after {
+                    left: -32px;
+                    top: -5px;
+                }
+            }
+            &:nth-child(3) {
+                grid-column: unset;
+                height: 462px;
+            }
+        }
+        &__feed {
+            transform: translateX(45%);
+        }
 
+    }
 }
