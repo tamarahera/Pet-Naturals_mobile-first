@@ -1,0 +1,30 @@
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+
+    .header {
+        justify-content: center;
+        &__logo {
+            margin-left: 0px;
+            padding: 12px 26px;
+            background: url(../images/promo/cloud.webp) center center/cover no-repeat;
+            width: 329px;
+    
+        }
+        &__menu {
+            margin-top: 20px;
+            padding: 46px 70px;
+            justify-content: space-between;
+            width: 446px;
+            height: 102px;
+            &:after {
+                background: url(../images/promo/cloud.webp) 100% 3px/100% 100% no-repeat;
+                top: 0px;
+                left: 0px;
+                width: 446px;
+                height: 102px;
+            }
+        }
+    }
+}

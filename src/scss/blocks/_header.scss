@@ -43,6 +43,12 @@
             line-height: 18px;
             font-size: 18px;
             border-bottom: 1px #715D00 solid;
+            &:hover {
+                transition: 1s;
+                text-decoration: none;
+                color: #537D13;
+                border-bottom: 2px #537D13 solid;
+            }
         }
     }
 
