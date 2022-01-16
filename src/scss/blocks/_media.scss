@@ -130,3 +130,64 @@
 
     }
 }
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .title {
+        font-size: 52px;
+        line-height: 61px;
+    }
+    .header {
+        padding-left: 16px;
+        &__menu {
+            padding: 46px 17px 46px 116px;
+            &:after {
+                background: url(../images/promo/cloud.webp) 100% 3px/100% 100% no-repeat;
+                left: 37px;
+            }
+        }
+        &__item {
+            &-link {
+                font-size: 20px;
+            }
+        }
+    }
+    .promo {
+        &__title {
+            margin-top: 20px;
+        }
+        &__wrapper {
+            margin-top: 5px;
+            grid-template-columns: 401px 388px 270px;
+            grid-template-rows: 462px;
+        }
+        &__descr {
+            padding: 0;
+            line-height: 34px;
+        }
+        &__feed {
+            right: 21px;
+            bottom: 23px;
+            height: auto;
+            width: 385px;
+        }
+        &__item {
+            &:nth-child(2) {
+                &:before {
+                    top: 79px;
+                    left: -398px;
+                    width: 320px;
+                    height: 390px;
+                }
+                &:after {
+                    top: 79px;
+                    width: 320px;
+                    height: 390px;
+                    left: -8px;
+                    transform: scale(-1, 1);
+                }
+            }
+        }
+    }
+}
